@@ -8,6 +8,8 @@ An `.html` version of the Jupyter notebook is included in the repository files.
 
 ### Output - Results
 
+<img src="img/output_622x441.png" width="622" height="441" style="background-color:white;" alt="recommendations accuracy">
+
 Train and test datasets have only 20 users in common that we can use to make predictions and test our model. This is usually considered a small number of users to draw meaningful conclusions. We can observe that accuracy in the test dataset decreases as the number of latent features (k) increases, starting close to 98% for a few latent features and stabilizing to around 96.5% for 400 – 700 latent features. This is reversely proportional to what happens with accuracy in the training data.
 
 Looking at the training dataset results we observe that accuracy is extremely high (above 99%) even for a few latent features. This points to a known problem with matrix factorization with SVD, usually mentioned as overfitting. This becomes even worse for high numbers of latent features. For `k = 10` latent features there are `Ik + Uk` (`I` for items, `U` for users) parameters to estimate, i.e. `1051*10 + 5148*10 = 61990`. These need to be estimated from the `40000` training examples which are much less. To avoid this in practice regularization is used with gradient descent technique.
