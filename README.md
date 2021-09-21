@@ -22,7 +22,7 @@ Nevertheless, given the circumstances, to determine if the recommendations we ma
 
 ## Environment
 
-The development environment used for working with the project was created on a Windows 10 pc with [devcontainers](https://code.visualstudio.com/docs/remote/containers).
+The development environment used for working with the project was created on a Windows 10 pc with [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 The environment in the container is:
 
